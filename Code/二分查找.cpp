@@ -16,10 +16,10 @@ bool BinaryResearch(int *data, int num,int size){
 			return true;
 		}
 		else if (num > data[mid]){
-			low++;
+			low = mid + 1;
 		}
 		else{
-			high--;
+			high = mid - 1;
 		}
 	}
 	return false;
